@@ -87,3 +87,4 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_NANO := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true # aditionally, buggy
+TW_NO_USB_STORAGE := true
