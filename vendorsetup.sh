@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_V2802AN-userdebug
-add_lunch_combo omni_V2802AN-eng
+add_lunch_combo omni_jerry-userdebug
+add_lunch_combo omni_jerry-eng

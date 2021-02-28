@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_V2802AN.mk
+     $(LOCAL_DIR)/omni_jerry.mk

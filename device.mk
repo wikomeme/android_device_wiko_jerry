@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/wiko/V2802AN
+LOCAL_PATH := device/wiko/jerry
 

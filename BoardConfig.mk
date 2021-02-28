@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/wiko/V2802AN
+DEVICE_PATH := device/wiko/jerry
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -31,12 +31,12 @@ TARGET_CPU_VARIANT := generic
 # Assert
 TARGET_OTA_ASSERT_DEVICE := V2802AN
 
-# Bootloader"
+# Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := JERRY
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8486188 # This is the maximum known partition size, but it can be higher, so we just omit it
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8486188 # This is the maximum known partition size, but it can be higher, so we just omit it
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -57,8 +57,8 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/wiko/V2802AN
-TARGET_KERNEL_CONFIG := V2802AN_defconfig
+TARGET_KERNEL_SOURCE := kernel/wiko/jerry
+TARGET_KERNEL_CONFIG := jerry-twrp_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6580
