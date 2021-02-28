@@ -21,16 +21,16 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from V2802AN device
-$(call inherit-product, device/wiko/V2802AN/device.mk)
+# Inherit from jerry device
+$(call inherit-product, device/wiko/jerry/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := V2802AN
-PRODUCT_NAME := omni_V2802AN
+PRODUCT_DEVICE := jerry
+PRODUCT_NAME := omni_jerry
 PRODUCT_BRAND := WIKO
 PRODUCT_MODEL := JERRY
 PRODUCT_MANUFACTURER := wiko
