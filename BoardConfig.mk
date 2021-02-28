@@ -88,5 +88,4 @@ TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_NANO := true
 TW_NO_EXFAT := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true # aditionally, buggy
-BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_USB_STORAGE := true
