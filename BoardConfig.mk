@@ -78,7 +78,7 @@ PLATFORM_VERSION := 16.1.0
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_INCLUDE_CRYPTO := false # This device doesn't support it properly and we are on low space
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false # Due to low space
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
@@ -87,4 +87,4 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_NANO := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true # aditionally, buggy
-TW_NO_USB_STORAGE := true
+#TW_NO_USB_STORAGE := true
