@@ -86,6 +86,5 @@ TW_USE_TOOLBOX := true
 # Exclusions due to low space
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_NANO := true
-TW_NO_EXFAT := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true # aditionally, buggy
 TW_NO_USB_STORAGE := true
