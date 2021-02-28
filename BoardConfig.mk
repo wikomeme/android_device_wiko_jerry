@@ -60,9 +60,12 @@ TARGET_KERNEL_HEADER_ARCH := arm
 ifneq ($(WITH_KERNEL_SOURCE),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage-dtb
 else
+# GCC 4.8 only!!!!!!
 TARGET_KERNEL_SOURCE := kernel/wiko/jerry
 TARGET_KERNEL_CONFIG := v2800_defconfig
 endif
+LZMA_RAMDISK_TARGETS := recovery
+BOARD_NEEDS_LZMA_MINIGZIP := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6580
@@ -74,7 +77,16 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_INCLUDE_CRYPTO := false # This device doesn't do it properly and we are on low space
+TW_EXTRA_LANGUAGES := false # Due to low space
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+# Exclusions due to low space
+TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_NANO := true
+TW_NO_EXFAT := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true # aditionally, buggy
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_NO_USB_STORAGE := true
